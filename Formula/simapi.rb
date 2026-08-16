@@ -1,8 +1,8 @@
 class Simapi < Formula
   desc "Validate simulation results before they reach production"
   homepage "https://sim-api.vercel.app"
-  url "https://github.com/TaxCollector23/SimAPI-YC-/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "7473721cb0e9a85a2eca34bb2b5d781ad59ef5bd69794cd9e590f6f6339dde3d"
+  url "https://github.com/TaxCollector23/SimAPI-YC-/archive/refs/tags/v1.1.2.tar.gz"
+  sha256 "33ad9fe4d85603cd771dfaabfa359aee58af3cfe92204cd1ed3112b201686d6c"
   license "MIT"
   head "https://github.com/TaxCollector23/SimAPI-YC-.git", branch: "main"
 
@@ -18,6 +18,6 @@ class Simapi < Formula
   end
 
   test do
-    assert_match "v1.0.0", shell_output("#{bin}/simapi version")
+    assert_match "v1.1.2", shell_output("#{bin}/simapi version")
   end
 end
